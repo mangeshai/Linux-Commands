@@ -1,0 +1,6 @@
+This command will list the graphics adapters connected. You’ll typically see entries for the integrated graphics (like Intel) and for your dedicated GPU (like NVIDIA or AMD).
+>>lspci | grep VGA
+
+This command lists the display providers in use. The active provider typically corresponds to the device handling the display.
+If you see NVIDIA or AMD as a provider, your HDMI cable is likely connected to the GPU.
+>>xrandr --listproviders
